@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+.train-margin {
+  margin-top: 100px;
+}
+
+.cardy {
+  border: none;
+}
+
+.text-primary {
+  color: #3f60d3 !important;
+}
+
+.pading {
+  padding: 6px 16px;
+}
+
+.btn-light {
+  border: 1px solid #3f60d3;
+  color: #3f60d3 !important;
+}
+
+.btn-light:hover {
+  background: #3f60d3 !important;
+  color: #fff !important;
+}
+
+.btn-warning {
+  background: #3f60d3 !important;
+  color: #fff !important;
+  border: none;
+}
+
+.btn-dark {
+  background: #f8d000 !important;
+  color: #fff !important;
+  border: none;
+  padding: 10px 12px;
+}
+
+.bg-style {
+  box-shadow: 0px 0px 0px #fff;
+  border: none;
+}
+
+.new-style {
+  /* height: 100vh; */
+  margin: 0 auto;
+  padding: 70px 20px;
+}
+
+.bg-secondary {
+  background: #7700be !important;
+}
+
+.pad-card {
+  padding: 15px 25px;
+}
+
+.img-style {
+  width: 50px;
+  height: 50px;
+}
+
+.my-link {
+  text-decoration: none;
+}
+
+.p-text {
+  font-size: 16px;
+}
+
+.style {
+  color: #000;
+}
+
+.styles {
+  font-size: 15px;
+}
+
+.height {
+  height: 100vh;
+}
+/* .cardy-style {
+  overflow-x: hidden;
+} */
+
+@media (max-width: 768px) {
+  .disa {
+    order: -1;
+  }
+
+  .disap {
+    display: none;
+  }
+
+  .p-text {
+    font-size: 10px;
+  }
+
+  .pading {
+    padding: 0px 8px;
+  }
+
+  .height {
+    height: 0%;
+  }
+}
