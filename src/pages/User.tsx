@@ -28,13 +28,24 @@ const UserById = () => {
   return (
     <div>
       {user && (
-        <div>
-          <img src={user.avatar} alt="" />
-          <h3>
-            {user.first_name} {user.last_name}
-          </h3>
-          <p>{user.email}</p>
+        <div className="container">
+          <div className="col-sm-12 col-md-12 col-lg-4 d-flex align-items-center text-light  avatar-style bg-secondary justify-content-center">
+            <div className="mt-3">
+              <img src={user.avatar} alt="" className="rounded-circle" />
+              <h3>
+                {user.first_name} {user.last_name}
+              </h3>
+              <p>{user.email}</p>
+            </div>
+          </div>
         </div>
+        // <div>
+        //   <img src={user.avatar} alt="" />
+        //   <h3>
+        //     {user.first_name} {user.last_name}
+        //   </h3>
+        //   <p>{user.email}</p>
+        // </div>
       )}
     </div>
   );

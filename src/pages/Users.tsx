@@ -53,12 +53,12 @@ const Users = () => {
 
               <div className="col-12 d-flex align-items-center justify-content-between">
                 <div className="col-6">
-                  <h3 className="fw-bolder text-light">Team Members</h3>
+                  <h3 className="fw-bolder t-text text-light">Team Members</h3>
                 </div>
                 <div className="col-6 d-flex align-items-center justify-content-end">
                   <button
                     type="submit"
-                    className="btn btn-dark text-light pading "
+                    className="btn btn-dark pad-new text-light "
                   >
                     + Invite a new user
                   </button>
@@ -74,7 +74,7 @@ const Users = () => {
                       className="my-link"
                     >
                       <div className="card cardy-style bg-light mb-4">
-                        <div className="d-flex align-items-center justify-content-between">
+                        <div className=" d-flex align-items-center justify-content-between">
                           <div className="col-3 ">
                             <div className="card cardy d-flex flex-row align-items-center gap-2 p-2">
                               <img
@@ -87,31 +87,58 @@ const Users = () => {
                               </p>
                             </div>
                           </div>
-                          <div className="col-3 text-start">
+                          <div className="col-3 text-start ">
                             <div className="card cardy ">
                               <p className=" card-text styles text-secondary fw-bold">
                                 {user.email}
                               </p>
                             </div>
                           </div>
-                          <div className="col-3 disap">
-                            <div className="card cardy">
+                          <div className="col-3 ">
+                            <div className="card cardy disap">
                               <p className="p-text card-text text-secondary fw-bold">
                                 Developer
                               </p>
                             </div>
                           </div>
                           <div className="col-3 disap">
-                            <div className="card cardy d-flex flex-row align-items-center gap-4 w-100">
+                            <div className="card cardy d-flex flex-row align-items-center gap-5 w-100">
                               <button
                                 type="button"
                                 className="btn btn-success btn-sm text-light card-text "
                               >
                                 Activated
                               </button>
-                              <span className="text-secondary">
-                                <i className="fas fa-gear fs-5"></i>
-                              </span>
+                              <div className="d-flex align-items-center">
+                                <span className="text-secondary">
+                                  <i className="fas fa-gear fs-5"></i>
+                                </span>
+                                <div className="dropdown">
+                                  <button
+                                    className="btn btn-transparent action-style dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  ></button>
+
+                                  <ul className="dropdown-menu">
+                                    <li>
+                                      <a className="dropdown-item" href="#">
+                                        settings
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a className="dropdown-item" href="#">
+                                        profile
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a className="dropdown-item" href="#">
+                                        logout
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -121,44 +148,51 @@ const Users = () => {
               </div>
 
               <div className="d-flex align-items-center justify-content-center gap-3">
-                <nav aria-label="Page navigation example">
+                <div aria-label="Page navigation example">
                   <ul className="pagination">
                     <li className="page-item">
-                      <a className="page-link" href="#" aria-label="Previous">
+                      <button
+                        className="page-link"
+                        onClick={previous}
+                        disabled={page === 1}
+                        aria-label="Previous"
+                      >
                         <span aria-hidden="true">&laquo;</span>
-                      </a>
+                      </button>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <button
+                        className="page-link"
+                        onClick={previous}
+                        disabled={page === 1}
+                        aria-label="Previous"
+                      >
                         1
-                      </a>
+                      </button>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <button
+                        className="page-link"
+                        onClick={next}
+                        disabled={page === 2}
+                        aria-label="Next"
+                      >
                         2
-                      </a>
+                      </button>
                     </li>
+
                     <li className="page-item">
-                      <a className="page-link" href="#">
-                        3
-                      </a>
-                    </li>
-                    <li className="page-item">
-                      <a className="page-link" href="#" aria-label="Next">
+                      <button
+                        className="page-link"
+                        onClick={next}
+                        disabled={page === 2}
+                        aria-label="Next"
+                      >
                         <span aria-hidden="true">&raquo;</span>
-                      </a>
+                      </button>
                     </li>
                   </ul>
-                </nav>
-                {/* <button onClick={previous} disabled={page === 1}>
-                  Previous
-                </button>
-                <div>
-                  <h3>page:{page}</h3>
                 </div>
-                <button onClick={next} disabled={page === 2}>
-                  Next
-                </button> */}
               </div>
             </div>
           </div>
