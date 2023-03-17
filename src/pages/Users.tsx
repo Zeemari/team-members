@@ -58,7 +58,7 @@ const Users = () => {
                 <div className="col-6 d-flex align-items-center justify-content-end">
                   <button
                     type="submit"
-                    className="btn btn-dark pad-new text-light "
+                    className="btn btn-light sizes pad-new text-light "
                   >
                     + Invite a new user
                   </button>

@@ -125,7 +125,7 @@ const Login = () => {
                 <div className="register">
                   <button
                     type="button"
-                    className="btn btn-light w-100 mb-4 pading "
+                    className="btn btn-outline-info  w-100 mb-4 pading "
                   >
                     Signup
                   </button>
